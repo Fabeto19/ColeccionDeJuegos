@@ -33,7 +33,7 @@
                     <navigationItem key="navigationItem" id="5bC-jb-flI">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="4Og-FE-J5J">
                             <connections>
-                                <segue destination="LPz-lJ-Tmr" kind="show" id="5ef-ZL-hlo"/>
+                                <segue destination="LPz-lJ-Tmr" kind="show" identifier="juegoSegue" id="5ef-ZL-hlo"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,16 +73,26 @@
                                     <action selector="agregarTapped:" destination="LPz-lJ-Tmr" eventType="touchUpInside" id="6IL-xU-bHE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIH-U0-BkB">
+                                <rect key="frame" x="169" y="390" width="76" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="LPz-lJ-Tmr" eventType="touchUpInside" id="FRS-FY-dLs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nr6-e5-55R"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fpT-7z-hIJ" firstAttribute="centerX" secondItem="I1t-OI-eYo" secondAttribute="centerX" id="8qi-Ix-mnv"/>
                             <constraint firstItem="kyR-2W-sqp" firstAttribute="width" secondItem="fey-6D-MDx" secondAttribute="width" multiplier="0.346429" id="FEZ-OH-z2T"/>
+                            <constraint firstItem="LIH-U0-BkB" firstAttribute="top" secondItem="fpT-7z-hIJ" secondAttribute="bottom" constant="15" id="IvS-FG-PhW"/>
                             <constraint firstItem="fpT-7z-hIJ" firstAttribute="top" secondItem="kyR-2W-sqp" secondAttribute="bottom" constant="20" id="ZxO-TD-bd4"/>
                             <constraint firstItem="kyR-2W-sqp" firstAttribute="centerX" secondItem="I1t-OI-eYo" secondAttribute="centerX" id="p9S-BU-pak"/>
                             <constraint firstItem="fey-6D-MDx" firstAttribute="top" secondItem="Nr6-e5-55R" secondAttribute="top" constant="32" id="qJE-OS-lZT"/>
                             <constraint firstItem="kyR-2W-sqp" firstAttribute="top" secondItem="fey-6D-MDx" secondAttribute="bottom" constant="20" id="sbf-OM-0UV"/>
+                            <constraint firstItem="LIH-U0-BkB" firstAttribute="centerX" secondItem="I1t-OI-eYo" secondAttribute="centerX" id="xvi-n1-qlh"/>
                             <constraint firstItem="fey-6D-MDx" firstAttribute="centerX" secondItem="I1t-OI-eYo" secondAttribute="centerX" id="z5B-mX-ICD"/>
                         </constraints>
                     </view>
@@ -101,13 +111,15 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="agregarActualizarBoton" destination="fpT-7z-hIJ" id="0Xq-4l-4Ri"/>
+                        <outlet property="eliminarBoton" destination="LIH-U0-BkB" id="eA7-kK-dit"/>
                         <outlet property="imageView" destination="fey-6D-MDx" id="lwD-fa-ZHd"/>
                         <outlet property="tituloTextField" destination="kyR-2W-sqp" id="erg-r1-EAO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzS-jM-V27" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1592.753623188406" y="83.705357142857139"/>
+            <point key="canvasLocation" x="1830" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uhX-UY-ngy">

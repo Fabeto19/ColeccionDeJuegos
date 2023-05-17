@@ -25,6 +25,10 @@ class ViewController: UIViewController , UITableViewDelegate,UITableViewDataSour
         return juegos.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let juego = juegos[indexPath.row]
+        performSegue(withIdentifier: "juegoSegue", sender: juego)
+    }
     
     override func  viewWillAppear(_ animated: Bool) {
         let context = (UIApplication.shared.delegate as!  AppDelegate).persistentContainer.viewContext
@@ -34,6 +38,10 @@ class ViewController: UIViewController , UITableViewDelegate,UITableViewDataSour
         }catch{
             
         }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let siguienteVC = segue.destination as! JuegosViewController
+        siguienteVC.juego = sender as? Juego
     }
     override func viewDidLoad() {
         super.viewDidLoad()
