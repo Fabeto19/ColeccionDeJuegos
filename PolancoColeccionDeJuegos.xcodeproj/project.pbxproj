@@ -14,6 +14,7 @@
 		7FD96B5C2A1539C500EF2659 /* PolancoColeccionDeJuegos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FD96B5A2A1539C500EF2659 /* PolancoColeccionDeJuegos.xcdatamodeld */; };
 		7FD96B5E2A1539C900EF2659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD96B5D2A1539C900EF2659 /* Assets.xcassets */; };
 		7FD96B612A1539C900EF2659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FD96B5F2A1539C900EF2659 /* LaunchScreen.storyboard */; };
+		7FD96B692A15431200EF2659 /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD96B682A15431100EF2659 /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7FD96B5D2A1539C900EF2659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FD96B602A1539C900EF2659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FD96B622A1539C900EF2659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FD96B682A15431100EF2659 /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				7FD96B532A1539C500EF2659 /* SceneDelegate.swift */,
 				7FD96B552A1539C500EF2659 /* ViewController.swift */,
 				7FD96B572A1539C500EF2659 /* Main.storyboard */,
+				7FD96B682A15431100EF2659 /* JuegosViewController.swift */,
 				7FD96B5D2A1539C900EF2659 /* Assets.xcassets */,
 				7FD96B5F2A1539C900EF2659 /* LaunchScreen.storyboard */,
 				7FD96B622A1539C900EF2659 /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FD96B692A15431200EF2659 /* JuegosViewController.swift in Sources */,
 				7FD96B562A1539C500EF2659 /* ViewController.swift in Sources */,
 				7FD96B522A1539C500EF2659 /* AppDelegate.swift in Sources */,
 				7FD96B5C2A1539C500EF2659 /* PolancoColeccionDeJuegos.xcdatamodeld in Sources */,
